@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h3>INPUT TYPE</h3>
+    </nav>
+    <main>
+      <section id="view3" class="view3">
+        <form id="myform">
+          <label for="myInput"> TextInput:</label>
+          <input
+            type="text"
+            id="myInput"
+            class="int"
+            placeholder="Enter Name"
+          />
+          <button type="submit" class="submit">Submit</button>
+        </form>
+      </section>
+
+      <section class="view2">
+        <form action="" id="myform2">
+          <label for="myint"> TextOutput:</label>
+          <input type="text" id="myint" class="myout" />
+        </form>
+      </section>
+    </main>
+    <script>
+      const section = document.querySelector(".view3");
+      const int = document.querySelector(".int");
+
+      const button = document.querySelector(".submit");
+      button.addEventListener("click", (event) => {
+        event.preventDefault();
+
+        const output = document.querySelector(".myout");
+        output.value = int.value;
+       });
+    </script>
+  </body>
+</html>
