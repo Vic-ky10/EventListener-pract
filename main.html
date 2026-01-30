@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .btn {
+        padding: 30px;
+        border-radius: 10px;
+        margin: 80px 100px;
+      }
+      .green {
+        background-color: green;
+      }
+      .red {
+        background-color: red;
+      }
+      .height100{
+        height: 100px;
+      }
+      .width100{
+         width: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="btn">click</button>
+
+    <h2 class="h2">click</h2>
+
+    <script>
+      const h2 = document.querySelector(".h2");
+      const button = document.querySelector(".btn");
+      button.addEventListener("click", (event) => {
+        button.classList.toggle("green");
+      });
+
+      h2.addEventListener("click", (event) => {
+        const mytext = event.target.textContent;
+        mytext === "click"
+          ? event.target.textContent = "clicked"
+          : event.target.textContent = "click";
+      });
+         button.addEventListener("click", (event) => {
+        const mytext = event.target.textContent;
+        mytext === "click"
+          ? event.target.textContent = "clicked"
+          : event.target.textContent = "click";
+      });
+
+      button.addEventListener("mouseover" ,()=> {
+             button.classList.add("height100")
+               button.classList.add("width100")
+      })
+           
+         button.addEventListener("mouseout" ,()=> {
+             button.classList.remove("height100")
+               button.classList.remove("width100")
+      })
+
+      
+    </script>
+  </body>
+</html>
