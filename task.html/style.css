@@ -1,57 +1,55 @@
+*{
+    box-sizing: border-box;
+    font-family: "segoe UI" , Arial,  sans-serif;
+}
+
 body{
-    background-color: rgb(133, 156, 156);
-}
-
-
-h3{
+    min-height: 100vh;
+    margin: 0;
     display: flex;
     justify-content: center;
-}
-
-.view3{
-    display: flex;
     align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-      background-color: rgb(105, 222, 222);
-    
-}
-.view3 #myform{
-    display: flex;
-    flex-direction: column;
-    margin: 10px;
-    gap: 10px;
-    
-}
-.view3 input{
-    padding: 5px;
+    background: linear-gradient(135deg, #141e30 ,#243b55) ;
 
 }
-.view3 button{
-    position: relative;
-    left: 110px;
-    width: 70px;;
+.box{
+    width: 340px;
+    padding: 30px 25px;
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+    text-align: center;
+    transition: 0.3 ease;
 }
-
-.view2{
-    margin-top: 50px;
-    height: 120px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+.box:hover{
+    transform: translatex(-5px);
+}
+h2{
+    margin-bottom: 25px;
+    color: #222;
+}
+input{
+    width: 100%;
+    padding: 12px 14px;
+    border-radius: 8px;
+    font-size: 15px;
+    margin-bottom: 15px;
+    outline: none;
+    transition: 0.9s ease;
     
-      background-color: rgb(105, 222, 222);
+}
+input:focus {
+    border-color : #000;
+    box-shadow: 1 0 0 2px rgba(0,0, 0, 0.1);
+
 }
 
-.view2 #myform2{
-     margin: 10px;
-    gap: 10px;
-     display: flex;
-     flex-direction: column;
-    
+button{
+    width: 100%;;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
 }
-.view2 input{
-    padding: 5px;
+button:hover{
+    background-color: #afaac0;
 }
-
