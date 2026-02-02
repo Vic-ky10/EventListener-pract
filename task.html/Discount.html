@@ -18,13 +18,9 @@
     <script>
        
        const price = document.getElementById("price");
-     
-
-
-       document.getElementById("apply").addEventListener("click" ,() => {
+        document.getElementById("apply").addEventListener("click" ,() => {
         let price = 1000;
         let discount = document.getElementById("dis").value;
-         
         let final = price - (price*discount/100)
         alert("Final Price :$" + final)
       })
